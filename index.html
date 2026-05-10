@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfólio</title>
+    <link rel="icon" type="image/x-icon" href="/assets/fav-icon.png" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <h4 class="logo"><a href="">Meu Portfólio</a></h4>
+      <nav>
+        <ul class="nav_links" id="navLinks">
+          <li><a href="#about" onclick="closeMenu()">Sobre</a></li>
+          <li><a href="#education" onclick="closeMenu()">Formação</a></li>
+          <li><a href="#skill" onclick="closeMenu()">Habilidades</a></li>
+          <li><a href="#contact" onclick="closeMenu()">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a
+          class="nav_btn"
+          target="_blank"
+          href="https://wa.me/5561994607373?text=Oi%2C%20Yuri%21%20Vim%20pelo%20seu%20portf%C3%B3lio.%20Tudo%20bem%3F"
+        >
+          <button><i class="fa fa-whatsapp"></i> Vamos conversar</button>
+        </a>
+        <div class="menu-toggle" id="mobile-menu" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Seção Sobre (com foto e redes sociais) -->
+    <section id="about">
+      <div class="about-container">
+        <div class="about-text">
+          <h3><span>Olá! Eu sou Yuri Krieger —</span></h3>
+          <h1>Analista de Dados & Desenvolvedor</h1>
+          <p>
+            Profissional de Tecnologia e Ciência de Dados com formação em Análise e Desenvolvimento de Sistemas, pós‑graduação em Ciência de Dados e cursando pós‑graduação em Engenharia de Dados. Com experiência em análise de dados, organização de informações e automação de processos. Possuo vivência prática no desenvolvimento de rotinas de extração de dados via Python e na estruturação de bases e dashboards gerenciais integradas a Business Intelligence. Possuo ampla vivência na integração de sistemas corporativos complexos e processos de gestão documental.
+Tenho forte foco em transformar dados dispersos em conhecimento estruturado, otimizando a inteligência de negócios (BI) e apoiando a tomada de decisão estratégica baseada em evidências.
+          </p>
+          <a class="about_btn" href="mailto:yurikriegers@gmail.com">
+            <button><i class="fa fa-briefcase"></i> Contrate-me</button>
+          </a>
+        </div>
+        <div class="about-side">
+          <!-- Quadrado para a foto -->
+          <div class="photo-box">
+            <img src="assets/meuperfil.jpg" alt="Foto de Yuri Krieger" />
+            <!-- Substitua o src pela sua imagem ou remova a tag img para usar o placeholder -->
+          </div>
+          <!-- Círculos (botões sociais) -->
+          <div class="social-circles">
+            <a href="https://github.com/yurikrieger" target="_blank" class="circle-link github" title="GitHub">
+              <i class="fa fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/yuri-krieger-26a126175/" target="_blank" class="circle-link linkedin" title="LinkedIn">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>      
+    </section>
+
+    <!-- Seção Formação -->
+    <section id="education">
+      <div class="education">
+        <div class="edu-title">
+          <h1>Formação</h1>
+          <span>———o———</span>
+          <p>Histórico Acadêmico</p>
+        </div>
+
+        <div class="education-list">
+          <div class="edu-card">
+            <h2>Engenharia de Dados</h2>
+            <p class="date-edu">2026 - atual</p>
+            <p class="desc-edu">Pós-graduação em andamento – PUCMinas</p>
+          </div>
+          <div class="edu-card">
+            <h2>Ciência de Dados</h2>
+            <p class="date-edu">2026 - concluída</p>
+            <p class="desc-edu">Pós-graduação concluída – Faculdade Grancursos</p>
+          </div>
+          <div class="edu-card">
+            <h2>Análise e Desenv. de Sistemas</h2>
+            <p class="date-edu">2024 - concluída</p>
+            <p class="desc-edu">
+              Tecnólogo – Centro Universitário União das Américas (Descomplica)
+            </p>
+          </div>
+        </div>        
+      </div>
+    </section>
+
+    <!-- Seção Habilidades -->
+    <section id="skill">
+      <div class="skill">
+        <div class="skill-title">
+          <h1>Habilidades</h1>
+          <span>——o—o——</span>
+          <p>Ferramentas e tecnologias</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fa fa-code"></i>
+            <p>Python</p>
+            <p class="medium">Avançado</p>
+          </div>
+          <div class="skill-item">
+            <i class="fa fa-bar-chart"></i>
+            <p>Power BI</p>
+            <p class="medium">Avançado</p>
+          </div>
+          <div class="skill-item">
+            <i class="fa fa-database"></i>
+            <p>SQL</p>
+            <p class="basic">Médio</p>
+          </div>
+          <div class="skill-item">
+            <i class="fa fa-file-excel-o"></i>
+            <p>Excel</p>
+            <p class="medium">Médio</p>
+          </div>
+          <div class="skill-item">
+            <i class="fa fa-github"></i>
+            <p>Git/GitHub</p>
+            <p class="basic">Avançado</p>
+          </div>
+          <div class="skill-item">
+            <i class="fa fa-cogs"></i>
+            <p>Machine Learning</p>
+            <p class="basic">Básico</p>
+          </div>
+          <div class="skill-item">
+            <i class="fa fa-lightbulb-o"></i>
+            <p>Inteligência Artificial</p>
+            <p class="basic">Médio</p>
+          </div>
+          <div class="skill-item">
+            <i class="fa fa-cloud-download"></i>
+            <p>Web Scraping</p>
+            <p class="basic">Médio</p>
+          </div>
+          <div class="skill-item">
+            <i class="fa fa-line-chart"></i>
+            <p>Análise de Dados</p>
+            <p class="medium">Médio</p>
+          </div>
+          <div class="skill-item">
+            <i class="fa fa-book"></i>
+            <p>Storytelling</p>
+            <p class="medium">Médio</p>
+          </div>
+          <div class="skill-item">
+            <i class="fa fa-mobile"></i>
+            <p>Power Apps</p>
+            <p class="basic">Básico</p>
+          </div>
+          <div class="skill-item">
+            <i class="fa fa-file-text-o"></i>
+            <p>Pacote Office</p>
+            <p class="medium">Avançado</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact">
+      <div class="contact">
+        <div class="contact-title">
+          <h1>Contato</h1>
+          <span>——o—o—o——</span>
+          <p>Entre em contato para mais informações</p>
+        </div>
+      </div>
+
+      <div class="row contact-row">
+        <div class="col left">
+          <img src="assets/Contato.png" alt="Ilustração de contato" />
+        </div>
+        <div class="col right">
+            <form action="https://formspree.io/f/https://formspree.io/f/xzdokoyd" method="POST">
+              <label for="name">Nome completo</label>
+              <input type="text" name="name" id="name" required />
+
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" required />
+
+              <label for="subject">Assunto</label>
+              <input type="text" name="subject" id="subject" />
+
+              <label for="topic">Tópico</label>
+              <select name="topic" id="topic">
+                <option value="information">Informação</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Outros</option>
+              </select>
+
+              <label for="message">Mensagem</label>
+              <textarea name="message" id="message" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+
+              <div class="btn-form">
+                <input type="submit" value="Enviar" />
+              </div>
+            </form>
+          </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>  
+      <div class="foot-content">
+        <p>Gostou do meu perfil?</p>
+        <p>Siga minhas redes sociais</p>
+        <div class="social-icons">
+          <a href="https://github.com/yurikrieger" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/yuri-krieger-26a126175/" target="_blank">
+            <i class="fa fa-linkedin-square"></i>
+          </a>
+        </div>
+        <div class="createby">
+          <p>&copy; Yuri Eduardo da Silva Krieger, 2026.</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div id="scrool-up">
+      <a href="#about">
+        <i class="fa fa fa-arrow-up"></i>
+      </a>
+    </div>
+
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
